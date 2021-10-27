@@ -41,18 +41,12 @@ setTimeout(function () {
             Numbers.push(Usernumber);
             if (RanNumArr.includes(Usernumber) == true) {
                 ExactNumber.push(Usernumber)
-
             }
         }
     }
-    document.querySelector('.conatiner').innerHTML = InsUser()
+    document.querySelector('.container').innerHTML = `<div> hai indovinato ${ExactNumber.length} numeri: ${ExactNumber}</div>
+    `
 }
 
     , 5000);
 
-
-function InsUser() {
-    return `
-    <div> hai indovinato ${ExactNumber.length} numeri: ${ExactNumber}</div>
-    `
-}
